@@ -4,7 +4,7 @@ Stock configuration for the MK3/MK3S, converted over to Klipper. Use your standa
 
 ## Slicer Changes
 
-If using the built-in filament profiles, __remove the start g-code__ under the filament section. This modifies the flow rate to 96% to compensate for older printers. The MK3/MK3S don't need this.
+If using the built-in filament profiles, __remove the start g-code__ under the filament section. This used to modify the flow rate to 96% in Marlin, to compensate for older printers. The MK3/MK3S doesn't require this, and can actually result in under-extrusion with a properly calibrated extruder.
 
 ### Printer Start GCode
 
