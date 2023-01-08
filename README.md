@@ -2,20 +2,24 @@
 
 Stock configuration for the MK3/MK3S, converted over to Klipper. Use your standard Prusa printer profiles.
 
-## Slicer Start GCode
+## Slicer Changes
 
-### SuperSlicer
-```gcode
+If using the built-in filament profiles, __remove the start g-code__ under the filament section. This modifies the flow rate to 96% to compensate for older printers. The MK3/MK3S don't need this.
+
+### Printer Start GCode
+
+#### SuperSlicer
+```
 PRINT_START BED={first_layer_bed_temperature[initial_extruder]} EXTRUDER={first_layer_temperature[initial_extruder]+extruder_temperature_offset[initial_extruder]}
 ```
 
-### PrusaSlicer
-```gcode
+#### PrusaSlicer
+```
 PRINT_START BED={first_layer_bed_temperature[0]} EXTRUDER={first_layer_temperature[0]}
 ```
 
-## Slicer End GCode
-```gcode
+### Printer End G-Code
+```
 PRINT_END
 ```
 
