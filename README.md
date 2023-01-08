@@ -1,6 +1,6 @@
 # Klipper on a Prusa i3 MK3S
 
-Stock configuration for the MK3/MK3S, converted over to operate with standard Prusa profiles but with Klipper.
+Stock configuration for the MK3/MK3S, converted over to Klipper. Use your standard Prusa printer profiles, but with Klipper.
 
 ## Slicer Start GCode
 
